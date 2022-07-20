@@ -1,11 +1,7 @@
 const stringLength = (string) => {
-    let res = 0;
-    for( let i in string){
-        res++;
-        // console.log(stringLength('hello'))
-    }
-    return res;
-}
-console.log(stringLength('good Morning'))
+  //
+  if (string.length >= 1 && string.length <= 10) return string.length;
+ throw new Error('Error');
+};
 
 module.exports = stringLength;

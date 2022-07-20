@@ -17,7 +17,17 @@ const multi = cal.multi(10, 5);
 
 // Assert
 
-it(testMessage.add,() => { expect(sum).toBe(15) })
-it(testMessage.sub,() => { expect(sub).toBe(5) })
-it(testMessage.div,() => { expect(div).toBe(2) })
-it(testMessage.multi,() => { expect(multi).toBe(50) })
+describe('Calculator', () => {
+  it(testMessage.add, () => {
+    expect(sum).toBe(15);
+  });
+  it(testMessage.sub, () => {
+    expect(sub).toBe(5);
+  });
+  it(testMessage.div, () => {
+    expect(div).toBe(2);
+  });
+  it(testMessage.multi, () => {
+    expect(multi).toBe(50);
+  });
+});
